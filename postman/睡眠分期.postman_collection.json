@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "6d69fc46-91c7-4fd3-a6be-2f74c03d02d3",
+		"name": "睡眠分期",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13324958"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8081/predicted",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "raw",
+							"type": "file",
+							"src": "/Users/jiabinli/Downloads/TestData/segment_0.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/predicted",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"predicted"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
